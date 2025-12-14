@@ -1001,9 +1001,37 @@ button {
     transform: translateY(0);
 }
 
-/* ============================================
-   RESPONSIVIDADE ADICIONAL
-   ============================================ */
 @media (max-width: 480px) {
     :root {
-        --space
+        --space-md: 1rem;
+        --space-lg: 1.5rem;
+        --space-xl: 2rem;
+        --space-2xl: 3rem;
+    }
+
+    .hero-buttons {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .btn {
+        justify-content: center;
+    }
+
+    .hero-stats {
+        flex-direction: column;
+        gap: var(--space-md);
+    }
+
+    .projects-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .skills-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .contact-card {
+        width: 100%;
+    }
+}
